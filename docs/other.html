@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .resizable {
+        width: 200px;
+        height: 200px;
+        transition: width 0.3s ease, height 0.3s ease;
+      }
+    </style>
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll(".resizable");
+            images.forEach(image => {
+                image.addEventListener("load", function() {
+                    const originalWidth = image.naturalWidth;
+                    const originalHeight = image.naturalHeight;
+
+                    image.addEventListener("click", function() {
+                        if (image.dataset.enlarged === "true") {
+                            image.style.width = "200px";
+                            image.style.height = "200px";
+                            image.dataset.enlarged = "false";
+                        } else {
+                            image.style.width = originalWidth + "px";
+                            image.style.height = originalHeight + "px";
+                            image.dataset.enlarged = "true";
+                        }
+                    });
+                });
+                if (image.complete) {
+                    image.dispatchEvent(new Event('load'));
+                }
+            });
+        });
+        function copyText(element) {
+            var textToCopy = document.getElementById(element);
+            navigator.clipboard.writeText(textToCopy.textContent);
+        }
+    </script>
+    <title>OMA / Nibelung</title>
+  </head>
+  <body>
+    <table cols="2" height="0" width="70%" cellspacing="0" cellpadding="0" border="1">
+        <thead>
+        <tr>
+          <td><b>OMA</b></td>
+          <td><b>Nibelung</b></td>
+        </tr>
+      </thead>
+     <tbody>
+       <colgroup>
+    <col style="width: 50%;">
+    <col style="width: 50%;">
+  </colgroup>
+        
+        <tr>
+          <td style="background-color: lightgray;">Запрос</td>
+          <td style="background-color: lightgray;"><table><tr><td><div id="query-1">поликар</div></td><td><button onclick="copyText('query-1')">📄</button></td></tr></table></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><img src="./screenshots/oma/6b3146b269e73ce283c8d428bda53a1c.png" alt="OMA_поликар" class="resizable"></td>
+          <td><img src="./screenshots/nibelung/6b3146b269e73ce283c8d428bda53a1c.png" alt="Nibelung_поликар" class="resizable"></td>
+        </tr>
+        
+        <tr>
+          <td style="background-color: lightgray;">Запрос</td>
+          <td style="background-color: lightgray;"><table><tr><td><div id="query-2">газонакосилка акция</div></td><td><button onclick="copyText('query-2')">📄</button></td></tr></table></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><img src="./screenshots/oma/ddb5822bce2e7a0b41089328a3f0a89d.png" alt="OMA_газонакосилка акция" class="resizable"></td>
+          <td><img src="./screenshots/nibelung/ddb5822bce2e7a0b41089328a3f0a89d.png" alt="Nibelung_газонакосилка акция" class="resizable"></td>
+        </tr>
+        
+        <tr>
+          <td style="background-color: lightgray;">Запрос</td>
+          <td style="background-color: lightgray;"><table><tr><td><div id="query-3">тумба под телевизор</div></td><td><button onclick="copyText('query-3')">📄</button></td></tr></table></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><img src="./screenshots/oma/4dbd34555a59ca8db53d9cb1e78b9353.png" alt="OMA_тумба под телевизор" class="resizable"></td>
+          <td><img src="./screenshots/nibelung/4dbd34555a59ca8db53d9cb1e78b9353.png" alt="Nibelung_тумба под телевизор" class="resizable"></td>
+        </tr>
+        
+        <tr>
+          <td style="background-color: lightgray;">Запрос</td>
+          <td style="background-color: lightgray;"><table><tr><td><div id="query-4">шпатлевка полимерная финишная ilmax 6440 15кг ооо илмакс г минск</div></td><td><button onclick="copyText('query-4')">📄</button></td></tr></table></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><img src="./screenshots/oma/b7bf44c62399f7920e3e2235c1b17f9c.png" alt="OMA_шпатлевка полимерная финишная ilmax 6440 15кг ооо илмакс г минск" class="resizable"></td>
+          <td><img src="./screenshots/nibelung/b7bf44c62399f7920e3e2235c1b17f9c.png" alt="Nibelung_шпатлевка полимерная финишная ilmax 6440 15кг ооо илмакс г минск" class="resizable"></td>
+        </tr>
+        
+        <tr>
+          <td style="background-color: lightgray;">Запрос</td>
+          <td style="background-color: lightgray;"><table><tr><td><div id="query-5">перфоратор аккумуляторный</div></td><td><button onclick="copyText('query-5')">📄</button></td></tr></table></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><img src="./screenshots/oma/d92a8e818b5e4a60de4a83f88e848238.png" alt="OMA_перфоратор аккумуляторный" class="resizable"></td>
+          <td><img src="./screenshots/nibelung/d92a8e818b5e4a60de4a83f88e848238.png" alt="Nibelung_перфоратор аккумуляторный" class="resizable"></td>
+        </tr>
+        
+        <tr>
+          <td style="background-color: lightgray;">Запрос</td>
+          <td style="background-color: lightgray;"><table><tr><td><div id="query-6">лента сигна</div></td><td><button onclick="copyText('query-6')">📄</button></td></tr></table></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><img src="./screenshots/oma/f914f884da0fcae7117e7c040d075d1b.png" alt="OMA_лента сигна" class="resizable"></td>
+          <td><img src="./screenshots/nibelung/f914f884da0fcae7117e7c040d075d1b.png" alt="Nibelung_лента сигна" class="resizable"></td>
+        </tr>
+        
+        <tr>
+          <td style="background-color: lightgray;">Запрос</td>
+          <td style="background-color: lightgray;"><table><tr><td><div id="query-7">электрокипятильник</div></td><td><button onclick="copyText('query-7')">📄</button></td></tr></table></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><img src="./screenshots/oma/82785474e5ad9accd555c13792204927.png" alt="OMA_электрокипятильник" class="resizable"></td>
+          <td><img src="./screenshots/nibelung/82785474e5ad9accd555c13792204927.png" alt="Nibelung_электрокипятильник" class="resizable"></td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>
